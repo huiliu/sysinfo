@@ -1,0 +1,18 @@
+
+message DiskIO {
+    required string partition_name = 1;                // 分区名
+
+    required int64 count_read_completed = 2;     // the total number of reads completed successfully
+    required int64 count_read_merged = 3;        // # of reads merged
+    required int64 count_read_sectors = 4;       // the total number of sectors read successfully
+    required int64 time_read_consume = 5;        // # of milliseconds spent reading
+
+    required int64 count_write_completed = 6;    // the total number of writes completed successfully
+    required int64 count_write_merged = 7;       // # of writes merged
+    required int64 count_write_sectors = 8;      // the total number of sectors write successfully
+    required int64 time_write_consume = 9;       // # of milliseconds spent writing
+
+    required int64 count_current_io = 10;         // # of I/Os currently in progress
+    required int64 time_io_spend = 11;            // # of milliseconds spent doing I/Os
+    required int64 time_weight_current_io = 12;   // weighted # of milliseconds spent doing I/Os
+}

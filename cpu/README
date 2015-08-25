@@ -1,0 +1,24 @@
+
+文件/proc/stat
+
+cpu  2638230 561 481816 12573734 28150 7 2062 0 0 0
+cpu0 330121 54 60412 1571187 3306 0 289 0 0 0
+cpu1 328294 78 60196 1573714 3379 0 216 0 0 0
+cpu2 330200 80 60273 1570817 3721 0 281 0 0 0
+cpu3 329120 59 60162 1572737 3523 0 221 0 0 0
+cpu4 329625 74 60008 1572291 3336 0 254 0 0 0
+cpu5 328818 84 59769 1573522 3750 1 225 0 0 0
+cpu6 330540 59 60409 1570811 3381 1 258 0 0 0
+cpu7 331510 71 60584 1568653 3751 2 316 0 0 0
+        |   |    |      |      |  |  |  | | |
+        |   |    |      |      |  |  |  | | |
+        |   |    |      |      |  |  |  | | |
+        |   |    |      |      |  |  | 与虚拟化相关(2.6.33)
+        |   |    |      |      |  | Time servicing softirqs
+        |   |    |      |      | Time servicing interrupts
+        |   |    |      |  Time waiting for I/O to complete
+        |   |    |  Time spent in the idle task
+        |   |  Time spent in system mode
+        | Time spent in user mode with low priority(nice)
+    Time spent in user mode
+        
