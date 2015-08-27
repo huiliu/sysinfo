@@ -1,0 +1,11 @@
+
+// TODO(liuhui): Describe this message.
+message LoadAvg {
+    
+    required double load1 = 1;
+    required double load5 = 2;
+    required double load15 = 3;
+
+    optional int32 proccounts = 4;
+    // Next available id: 1
+}

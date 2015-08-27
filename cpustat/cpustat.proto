@@ -1,0 +1,19 @@
+
+message CpuTime {
+    required string tag = 1;
+    required uint64 user = 2;       // Time spent in user mode
+    required uint64 nice = 3;       // Time spent in user mode with low priority
+    required uint64 system = 4;     // Time spent in system mode
+    required uint64 idle = 5;       // Time spent in the idle task
+    required uint64 iowait = 6;     // Time waiting for I/O to complete
+    required uint64 irq = 7;        // Time servicing interrupts
+    required uint64 softirq = 8;    // Time servicing softirqs
+    required uint64 steal = 9;      // Stolen time
+    required uint64 guest = 10;     // Time spent running a virtual CPU for guest
+    required uint64 guest_nice = 11;// Time spent running a niced guest
+}
+
+// TODO(liuhui): Describe this message.
+message CpuStat {
+    repeated CpuTime cpus = 1; 
+}

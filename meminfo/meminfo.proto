@@ -1,0 +1,15 @@
+
+// TODO(liuhui): Describe this message.
+message MemInfo {
+    required uint64 mem_total = 1;       // Total usable RAM
+    required uint64 mem_free = 2;        // The sum of LowFree+HighFree
+    required uint64 mem_buffers = 3;     // Relatively temporary storage for raw disk blocks
+    required uint64 mem_cached = 4;      // In-memory cache for files read from the disk
+    required uint64 swap_cached = 5;     // Memory that once was swapped out, is swapped back in but still also is in the swap file.
+    required uint64 hight_mem_total = 6;// Total amount of highmem. (>869M)
+    required uint64 hight_mem_free = 7; // amount of free highmem.
+    required uint64 low_mem_total = 8;  // Total amount of highmem. (>869M)
+    required uint64 low_mem_free = 9;  // amount of free highmem.
+    required uint64 swap_total = 10;     // Total usable RAM
+    required uint64 swap_free = 11;      // The sum of LowFree+HighFree
+}

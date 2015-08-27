@@ -1,0 +1,7 @@
+
+// 提取/proc/uptime,
+message Uptime {
+    
+    required uint32 uptime = 1;     // the uptime of the system
+    required uint32 idletime = 2;   // the amount of time spent in idle process
+}
